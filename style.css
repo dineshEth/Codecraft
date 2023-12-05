@@ -14,6 +14,9 @@
     --text-primary:#F9FAFB;
     --text-icons:#0F172A;
 
+    --hero-text-primary:96px;
+    --hero-text-secondary:38px;
+
     --font-lg:24px;
     --font-f0:18px;
     --font-f1:16px;
@@ -35,14 +38,18 @@ body{
 }
 
 .header_container{
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     height: 575px;
     align-self: center;
+    margin: 3px;
+
     /* border: 1px solid white; */
 }
+
 .header_container .navbar{
     /* width: 100%; */
-    margin: 3px;
+    /* margin: 3px; */
     padding: 2px 8px;
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +96,6 @@ body{
     opacity: 1;
     cursor: pointer;
 }
-
 .button{
     display: flex;
     flex-direction: row;
@@ -108,8 +114,50 @@ body{
     border: none;
 }
 
+.hero{
+    margin-top: 238px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section{
+    margin: auto;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: start;
+    gap: 24px;
+}
+.hero-section .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-text .welcome-text{
+    font-size: var(--hero-text-primary);
+    color:var(--text-primary);
+    font-weight: 600;
+    text-wrap: wrap;
+}
+.hero-text > p{
+    font-size: var(--hero-text-secondary);
+    color: var(--text-secondary);
+    text-wrap: wrap;
+    /* opacity: 0.5; */
+}
+.btn-size{
+    width: 300px;
+}
+.hero-section .button {
+    display: none;
+}
 
 @media screen and (max-width:440px){
+    .header_container{
+        height: fit-content;
+    }
     .header_container .navbar{
         flex-direction: column;
         flex-wrap:nowrap;
@@ -145,6 +193,13 @@ body{
     .navbar .nav_links .button{
         display: none;
     }
+    
+
+    /* .hero-section .button {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    } */
 }
 
 @media screen and (max-width:700px){
