@@ -35,6 +35,7 @@ body{
     font-size: var(--font-f2);
     background-color: var(--bgcolor);
     color : var(--text-primary);
+    margin: 3px;
 }
 
 .header_container{
@@ -42,7 +43,7 @@ body{
     width: 100%;
     height: 575px;
     align-self: center;
-    margin: 3px;
+    /* margin: 3px; */
 
     /* border: 1px solid white; */
 }
@@ -152,6 +153,25 @@ body{
 }
 .hero-section .button {
     display: none;
+}
+
+.main-section{
+    height: 1824px;
+}
+
+.main-section .skill-section{
+    height: 666px;
+    border: 1px solid white;
+}
+.main-section .commitment-section{
+    height: 518px;
+    border: 1px solid white;
+
+}
+.main-section .workflow-section{
+    height: 640px;
+    border: 1px solid white;
+
 }
 
 @media screen and (max-width:440px){
