@@ -299,6 +299,7 @@ body{
     /* position: relative; */
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
     /* align-items: center; */
     /* gap: 32px; */
@@ -474,6 +475,29 @@ body{
         justify-content: start;
         overflow: hidden;
         /* align-items: stretch; */
+    }
+    .workflow-section .workflow-container{
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    
+    }
+    .workflow-container .left-section{
+        width: 100%;
+        justify-content: center;
+    
+    }
+    .workflow-container .right-section{
+        width: 100%;
+        justify-content: center;
+    
+    }
+    .workflow-container .right-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid white; */
     }
     
 }
