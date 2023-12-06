@@ -379,6 +379,8 @@ body{
     font-size: var(--font-f2);
     color: var(--text-secondary);
 }
+
+
  
 
 @media screen and (max-width:450px){
