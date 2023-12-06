@@ -432,6 +432,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+.items p{
+    cursor: pointer;
+}
 .items .item{
     display: flex;
     flex-direction: column;
