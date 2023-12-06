@@ -380,7 +380,37 @@ body{
     color: var(--text-secondary);
 }
 
+.footer-section{
+    display: flex;
+}
+.footer-section .footer{
 
+}
+.footer .container{
+    display: flex;
+    flex-direction: row;
+}
+.container .left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+}
+.left-container .logo{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 8px;
+}
+.logo .name-text{
+    color: var(--text-primary);
+    font-size: var(--font-f2);
+}
+.left-container > p{
+    color: var(--text-primary);
+    font-size: var(--font-f1);
+}
  
 
 @media screen and (max-width:450px){
