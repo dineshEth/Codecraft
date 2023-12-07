@@ -59,9 +59,9 @@ body{
     /* margin: 3px; */
     padding: 2px 8px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .navbar .logo{
